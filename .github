@@ -117,6 +117,32 @@
         padding: 10px;
     }
 }
+
+    /* Estilização das caixas verdes */
+        .caixa {
+            position: fixed;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            width: 250px;
+            cursor: pointer;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Efeito hover */
+        .caixa:hover {
+            background-color: #388E3C;
+        }
+
+        /* Posicionamento das caixas mais para baixo */
+        #hortaPVC { bottom: 165px; }
+        #hortaPET { bottom: 50px; }
+
      <style> .navbar-custom { background-color: #28a745;  /* Verde  */ 
      } 
      
@@ -209,6 +235,54 @@
         </div>
     </section>
 
+    <section id="about" class="bg-light py-5">
+        <h3 class="text-center"> Como Manusear uma Horta</h3>
+        <div class="row text-center">
+        </div>
+    </section>
+
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h3>Escolha do local correto</h3>
+            <p>Certificando-se de que a horta receba luz solar direta por pelo menos 4-6 horas por dia. Varandas, paredes externas ou até mesmo cozinhas bem iluminadas são boas opções.</p>
+        </div>
+    </section>
+
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h3>Escolha da planta dejesada</h3>
+            <p>Ervas como manjericão, hortelã, alecrim e salsinha são ideais. Hortaliças de raízes curtas, como alface e rúcula, também funcionam bem.</p>
+        </div>
+    </section>
+
+      <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h3>Preparação do Ambiente</h3>
+            <p>Podem ser utilizados garrafas PET, vasos ou até tubos de PVC. Certifique-se de que tenham furos para drenagem.</p>
+        </div>
+    </section>
+
+     <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h3>Preparação do Solo e Adubação</h3>
+            <p>Utilize um solo rico em nutrientes e adube regularmente para manter as plantas saudáveis.</p>
+        </div>
+    </section>
+
+      <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h3>Irrigação</h3>
+            <p>Regue com moderação, garantindo que o solo fique úmido, mas não encharcado. Sistemas de irrigação por gotejamento podem ser viáveis.</p>
+        </div>
+    </section>
+
+     <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h3>Matutenção da Horta</h3>
+            <p>Remova folhas secas e monitore pragas. Faça podas regulares para estimular o crescimento saudável das plantas.</p>
+        </div>
+    </section>
+
     <!-- Seção Plantas -->
     <section id="plants" class="container py-5">
         <h3 class="text-center">Tipos de Plantas Recomendadas</h3>
@@ -264,6 +338,22 @@
         }
     </script>
 
+    <!-- Caixa 1: Horta de PVC -->
+    <div class="caixa" id="hortaPVC" onclick="abrirVideo('https://www.youtube.com/watch?v=XIo4oJxRlk8')">
+         Voce pode aprender a montar a sua Horta de **PVC** 
+    </div>
+
+    <!-- Caixa 2: Horta de Garrafa PET -->
+    <div class="caixa" id="hortaPET" onclick="abrirVideo('https://www.youtube.com/watch?v=umV3P25B0Nc')">
+         Passo a passo de como montar a sua Horta de **Garrafa PET** 
+    </div>
+
+    <script>
+        function abrirVideo(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+
     <!-- Seção Contato -->
     <section id="contact" class="bg-light py-5">
         <div class="container">
@@ -286,9 +376,11 @@
         </div>
     </section>
 
+
+
     <!-- Rodapé -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Horta Vertical. Todos os direitos reservados a UFMS.</p>
+        <p>&copy; 2025 Horta Vertical. Todos os direitos reservados.</p>
     </footer>
 
 </body>
